@@ -71,26 +71,61 @@
 /* styling for "PROJECTS" */
 
 .box-grid-header {
-	background-color: #ffe6ef;
 	transform: rotate(5deg) skew(20deg);
-	width: 15rem;
 }
-.box-grid-header h2 {
-	transform: rotate(-5deg) skew(-20deg);
-}
+
 .box-grid-header:before {
-	height: 7rem;
-	width: 15rem;
+	height: 100%;
+	width: 100%;
 	position: absolute;
 	z-index: -1;
 	content: '';
 	background-image: linear-gradient(-45deg, #3a0547, #e6246e 50%);
-	transform: rotate(-2.5deg) translateX(-0.9rem) translateY(1rem) skewX(-30deg)
+	transform: rotate(-2.5deg) translateX(0rem) translateY(0.5rem) skewX(-30deg)
 		skewY(-9deg);
 }
 
-/* styling for portfolio grids */
+@layer components {
+	.box-grid-header {
+		@apply bg-customPink1 2xl:h-36 2xl:w-96;
 
+		@media (min-width: 640px) {
+			width: 19rem;
+			height: 8rem;
+		}
+		@media (min-width: 768px) {
+			width: 21rem;
+			height: 9rem;
+		}
+		@media (min-width: 1024px) {
+			width: 11rem;
+			height: 6rem;
+		}
+		@media (min-width: 1280px) {
+			width: 15rem;
+			height: 7rem;
+		}
+	}
+	.box-grid-header h2 {
+		@apply text-4xl sm:text-6xl md:text-7xl lg:text-4xl xl:text-5xl 2xl:text-7xl;
+		@media (min-width: 640px) {
+			transform: rotate(-5deg) skew(-20deg) translateX(2.8rem);
+		}
+		@media (min-width: 768px) {
+			transform: rotate(-5deg) skew(-20deg) translateX(2.2rem);
+		}
+		@media (min-width: 1024px) {
+			transform: rotate(-5deg) skew(-20deg) translateX(1.2rem);
+		}
+		@media (min-width: 1280px) {
+			transform: rotate(-5deg) skew(-20deg) translateX(2rem);
+		}
+		@media (min-width: 1536px) {
+			transform: rotate(-5deg) skew(-20deg) translateX(4rem);
+		}
+	}
+}
+/* styling for portfolio grids */
 /* linear gradient bg */
 .box-grid-portfolio-bg {
 	background-size: 100% 100%;

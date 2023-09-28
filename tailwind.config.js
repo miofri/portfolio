@@ -6,6 +6,9 @@ module.exports = {
 	content: ['./src/**/*.{html,js,ts,tsx}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				boxGridHeaderBefore: 'linear-gradient(-45deg, #3a0547, #e6246e 50%)',
+			},
 			colors: {
 				darkPurple: '#150050',
 				mediumPurple: '#3F0071',

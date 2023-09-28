@@ -11,9 +11,7 @@ export const Card = React.forwardRef((props, ref: any) => {
 			pt-12 mb-98 overflow-visible items-center"
 		>
 			<div className="box-grid-header">
-				<h2 className="font-philospoher text-customPink1 text-6xl mt-10">
-					Projects
-				</h2>
+				<h2 className="font-philospoher text-customPink1  mt-10">Projects</h2>
 			</div>
 			<div
 				className="flex flex-col lg:flex-row gap-2 align-middle justify-center items-center
