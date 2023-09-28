@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Intro section (top index component) fade in animation */
+
+.fade-in-text {
+	opacity: 0;
+	transform: translateX(-20px); /* Start position outside the view */
+	animation: fadeInLeft 1.5s ease-in-out forwards; /* Adjust animation duration and timing as needed */
+}
+.delay-1 {
+	animation-delay: 0.5s;
+}
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10px); /* Start position outside the view */
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0); /* End position */
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Intro section (top index component) animated gradient background */
+
+.bg-animated {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		rgb(0, 90, 194),
+		#150050,
+		#fb2576,
+		#d9e082
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*2nd page (Projects)*/
+/* styling for "PROJECTS" */
+
+.box-grid-headercd {
+	background-color: #ffe6ef;
+	transform: rotate(5deg) skew(20deg);
+	width: 15rem;
+}
+.box-grid-header h2 {
+	transform: rotate(-5deg) skew(-20deg);
+}
+.box-grid-header:before {
+	height: 7rem;
+	width: 15rem;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	background-image: linear-gradient(-45deg, #3a0547, #e6246e 50%);
+	transform: rotate(-2.5deg) translateX(-0.9rem) translateY(1rem) skewX(-30deg)
+		skewY(-9deg);
+}
+
+/* styling for portfolio grids */
+
+/* linear gradient bg */
+.box-grid-portfolio-bg {
+	background-size: 100% 100%;
+	background-image: linear-gradient(-45deg, #150050 2%, #fb2576);
+}
+
+@layer components {
+	.box-grid-portfolio {
+		@apply md:col-span-2
+		w-90pros md:w-11/12 lg:w-98pros xl:w-95pros
+		h-fit md:h-60 xl:h-72 2xl:h-80
+		mt-5 p-4 md:p-5 xl:p-7
+		box-grid-portfolio-bg
+		shadow-md
+		shadow-customPink2;
+	}
+	.box-grid-portfolio h4 {
+		@apply text-lg md:text-2xl lg:text-3xl 2xl:text-5xl text-customPink1 font-mulish font-black;
+	}
+	.box-grid-portfolio-tags {
+		@apply rounded-lg h-fit w-fit px-2 bg-darkPurple p-1 text-almostMagenta lg:text-[9px] 2xl:text-xs;
+	}
+	.box-grid-portfolio button {
+		@apply h-fit lg:h-7 xl:h-8 2xl:h-10
+		w-fit lg:w-fit
+		px-3 py-1
+		mt-2 lg:mt-auto
+		text-xs lg:text-sm
+		bg-darkPurple text-customPink1 shadow-sm shadow-almostMagenta;
+	}
+	.box-grid-portfolio p {
+		@apply text-customPink1
+		text-sm sm:text-base md:text-base	lg:text-sm 2xl:text-lg
+		mt-5 font-mulish;
+	}
+}
+
+.bg-display-cat {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('./components/cat-keyboard.jpeg');
 }

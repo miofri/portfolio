@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Card } from './components/Card';
+import { Intro } from './components/Intro';
+import { useRef } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App = () => {
+	const cardRef = useRef<null | HTMLDivElement>(null);
+	const handleScrollToCard = () => {
+		if (cardRef.current) {
+			cardRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	return (
+		<>
+			<div className="h-screen flex gap-3 bg-animated">
+				<Intro scrollToCard={handleScrollToCard} />
+			</div>
+			<div className="h-auto min-h-screen bg-darkPurple">
+				<Card ref={cardRef} />
+			</div>
+			<div className="h-screen bg-darkPurple"></div>
+		</>
+	);
+};
 
 export default App;
