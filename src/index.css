@@ -70,7 +70,7 @@
 /*2nd page (Projects)*/
 /* styling for "PROJECTS" */
 
-.box-grid-headercd {
+.box-grid-header {
 	background-color: #ffe6ef;
 	transform: rotate(5deg) skew(20deg);
 	width: 15rem;
