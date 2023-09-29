@@ -12,7 +12,12 @@ export const App = () => {
 	};
 	return (
 		<>
-			<div className="h-screen flex gap-3 bg-animated">
+			<div
+				className="flex flex-col
+				w-full
+				gap-32
+				font-philospoher text-customPink1 bg-animated "
+			>
 				<Intro scrollToCard={handleScrollToCard} />
 			</div>
 			<div className="h-auto min-h-screen bg-darkPurple">

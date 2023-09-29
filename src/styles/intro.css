@@ -1,0 +1,62 @@
+/* Intro section (top index component) fade in animation */
+.fade-in-text {
+	opacity: 0;
+	transform: translateX(-20px); /* Start position outside the view */
+	animation: fadeInLeft 1.5s ease-in-out forwards; /* Adjust animation duration and timing as needed */
+}
+.delay-1 {
+	animation-delay: 0.5s;
+}
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10px); /* Start position outside the view */
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0); /* End position */
+	}
+}
+
+/* Intro section (top index component) animated gradient background */
+.bg-animated {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		rgb(0, 90, 194),
+		#150050,
+		#fb2576,
+		#d9e082
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
