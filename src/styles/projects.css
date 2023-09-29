@@ -42,14 +42,13 @@
 }
 .box-grid-header h2 {
 	@media (min-width: 0px) {
-		transform: rotate(-15deg) skew(-20deg) translateX(0.4rem)
-			translateY(-0.8rem);
+		transform: rotate(-5deg) skew(-20deg) translateX(0.4rem) translateY(-0.8rem);
 	}
 	@media (min-width: 640px) {
-		transform: rotate(-15deg) skew(-20deg) translateX(2.8rem);
+		transform: rotate(-5deg) skew(-20deg) translateX(2.8rem);
 	}
 	@media (min-width: 768px) {
-		transform: rotate(-15deg) skew(-20deg) translateX(2.7rem) translateY(0.4rem);
+		transform: rotate(-5deg) skew(-20deg) translateX(2.7rem) translateY(0.4rem);
 	}
 	@media (min-width: 1024px) {
 		transform: rotate(-5deg) skew(-20deg) translateX(1.2rem);
