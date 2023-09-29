@@ -108,6 +108,9 @@
 	}
 	.box-grid-header h2 {
 		@apply text-4xl sm:text-6xl md:text-7xl lg:text-4xl xl:text-5xl 2xl:text-7xl;
+		@media (min-width: 0px){
+			transform: rotate(-5deg) skew(-20deg) translateX(2.8rem)
+		}
 		@media (min-width: 640px) {
 			transform: rotate(-5deg) skew(-20deg) translateX(2.8rem);
 		}
