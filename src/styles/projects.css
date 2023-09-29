@@ -3,63 +3,26 @@
 
 @layer components {
 	.box-grid-header {
-		@apply bg-customPink1 2xl:h-36 2xl:w-96 mt-20;
+		@apply bg-customPink1 mt-20
+		w-36 sm:w-[19rem] md:w-[21rem] lg:w-44 xl:w-60 2xl:w-[20.5rem]
+		h-20 sm:h-32 md:h-36 lg:h-24 xl:h-28 2xl:h-36
+		rotate-[5deg] skew-x-[20deg];
 	}
 
 	/* PROJECTS text screen setting*/
 	.box-grid-header h2 {
 		@apply text-4xl sm:text-6xl md:text-7xl lg:text-4xl xl:text-5xl 2xl:text-7xl
 		w-fit
+		rotate-[-5deg] skew-x-[-20deg] translate-x-[0.4rem] translate-y-[-0.8rem]
+		sm:rotate-[-5deg] sm:skew-x-[-20deg] sm:translate-x-[2.8rem] sm:translate-y-[-0.8rem]
+		md:rotate-[-5deg] md:skew-x-[-20deg] md:translate-x-[2.7rem] md:translate-y-[-0.4rem]
+		lg:rotate-[-5deg] lg:skew-x-[-20deg] lg:translate-x-[1.2rem] lg:translate-y-[-0.4rem]
+		xl:rotate-[-5deg] xl:skew-x-[-20deg] xl:translate-x-[2rem] xl:translate-y-[-0.4rem]
+		2xl:rotate-[-5deg] 2xl:skew-x-[-20deg] 2xl:translate-x-[2.5rem] 2xl:translate-y-[-0.4rem]
 		drop-shadow-lg;
 	}
 }
 
-.box-grid-header {
-	@media (min-width: 0px) {
-		width: 9rem;
-		height: 5rem;
-	}
-	@media (min-width: 640px) {
-		width: 19rem;
-		height: 8rem;
-	}
-	@media (min-width: 768px) {
-		width: 21rem;
-		height: 9rem;
-	}
-	@media (min-width: 1024px) {
-		width: 11rem;
-		height: 6rem;
-	}
-	@media (min-width: 1280px) {
-		width: 15rem;
-		height: 7rem;
-	}
-	@media (min-width: 1536px) {
-		width: 20.5rem;
-		height: 9rem;
-	}
-}
-.box-grid-header h2 {
-	@media (min-width: 0px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(0.4rem) translateY(-0.8rem);
-	}
-	@media (min-width: 640px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(2.8rem);
-	}
-	@media (min-width: 768px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(2.7rem) translateY(0.4rem);
-	}
-	@media (min-width: 1024px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(1.2rem);
-	}
-	@media (min-width: 1280px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(2rem);
-	}
-	@media (min-width: 1536px) {
-		transform: rotate(-5deg) skew(-20deg) translateX(2.5rem) translateY(0.4rem);
-	}
-}
 @layer components {
 	.box-grid-portfolio {
 		@apply w-10/12 md:w-11/12 lg:w-98pros xl:w-7/12
@@ -93,9 +56,6 @@
 		mb-2
 		font-mulish;
 	}
-}
-.box-grid-header {
-	transform: rotate(5deg) skew(20deg);
 }
 
 .box-grid-header:before {
