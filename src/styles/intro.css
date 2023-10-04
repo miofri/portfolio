@@ -13,6 +13,7 @@
 	}
 	.intro-text {
 		@apply overflow-visible
+				flex flex-col
 				w-fit
 				mt-24
 				text-center
@@ -21,11 +22,11 @@
 	}
 
 	.intro-text h5 {
-		@apply border-b-8 border-customYellow2 mb-8 p-4;
+		@apply mb-4 p-4;
 	}
 	.intro-text p {
 		@apply text-xl md:text-xl lg:text-2xl landscape-1024:text-5xl landscape-1280:text-5xl
-		font-bold;
+		font-bold self-center;
 	}
 	.intro-arrow {
 		@apply fade-in-text text-customPink1 w-fit h-fit mb-10;
@@ -46,9 +47,9 @@
 	background: rgb(11, 0, 41);
 	background: linear-gradient(
 		-45deg,
-		rgba(11, 0, 41, 1) 0%,
-		rgba(251, 37, 118, 1) 50%,
-		rgba(255, 228, 92, 1) 100%
+		rgb(8, 0, 29) 5%,
+		rgb(45, 23, 126) 50%,
+		rgb(145, 30, 190) 90%
 	);
 }
 .bg-size-300 {

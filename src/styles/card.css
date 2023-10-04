@@ -15,11 +15,11 @@
 		pt-2 2xl:pt-3 font-mulish text-customPink1;
 	}
 	.box-grid-header h2 {
-		@apply text-5xl sm:text-6xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-8xl
-		2xl:px-12 pb-4
+		@apply text-4xl sm:text-5xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-7xl
+		pb-4
+		border-b-4
 		mx-auto
-		w-fit
-		text-customYellow2
+		text-customPink1
 		font-ubuntu;
 	}
 }

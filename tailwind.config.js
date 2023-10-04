@@ -40,7 +40,7 @@ module.exports = {
 				customPink1: '#ffe6ef',
 				customPink2: '#f4045f',
 				customYellow: '#FFD600',
-				customYellow2: '#FFE45C',
+				customYellow2: '#FFEB85',
 			},
 			fontFamily: {
 				mulish: ['Mulish', 'sans-serif'],

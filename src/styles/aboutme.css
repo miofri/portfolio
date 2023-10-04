@@ -30,7 +30,7 @@
 	}
 
 	.about-me h4 {
-		@apply text-customYellow2 font-ubuntu
+		@apply font-ubuntu
 		text-5xl
 		2xl:text-8xl;
 	}

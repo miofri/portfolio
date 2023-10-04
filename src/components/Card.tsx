@@ -8,11 +8,9 @@ export const Card = () => {
 			h-auto min-h-screen bg-darkPurple
 			mb-98 overflow-visible items-center"
 		>
-			<div className="mt-20 h-fit w-fit">
-				<div className="pb-2 bg-gradient-to-br from-[#FFD600] to-darkerMagenta">
-					<div className="box-grid-header">
-						<h2>Projects</h2>
-					</div>
+			<div className="mt-20 h-fit w-fit text-center">
+				<div className="box-grid-header">
+					<h2>PROJECTS</h2>
 				</div>
 				<div className="box-grid-header w-full ">
 					<p>More to come!</p>
@@ -28,7 +26,7 @@ export const Card = () => {
 				gap-1
 				"
 			>
-				<div className="box-grid-portfolio fade-in-text ">
+				<div className="box-grid-portfolio">
 					<div className="w-10/12 h-fit py-16">
 						<h4>E-Commerce</h4>
 						<p>
