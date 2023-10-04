@@ -55,7 +55,7 @@ export const Card = () => {
 					</div>
 				</div>
 
-				<div className="box-grid-portfolio fade-in-text">
+				<div className="box-grid-portfolio">
 					<h4 className=" text-5xl text-darkPurple font-mulish font-black">
 						Coming soon.
 					</h4>
