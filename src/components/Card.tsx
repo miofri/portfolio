@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Card = () => {
 	return (
-		<div
+		<section
 			className="flex flex-col
 			gap-10 sm:gap-20 md:gap-20 lg:gap-12 xl:gap-0 2xl:gap-10
 			h-auto min-h-screen bg-darkPurple
@@ -14,7 +14,7 @@ export const Card = () => {
 						<h2>Projects</h2>
 					</div>
 				</div>
-				<div className="box-grid-header w-full">
+				<div className="box-grid-header w-full ">
 					<p>More to come!</p>
 				</div>
 			</div>
@@ -63,6 +63,6 @@ export const Card = () => {
 					</h4>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };

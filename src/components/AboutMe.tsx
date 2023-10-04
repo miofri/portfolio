@@ -2,7 +2,7 @@ import React from 'react';
 
 export const AboutMe = React.forwardRef((props, ref: any) => {
 	return (
-		<div ref={ref} className="about-me">
+		<section ref={ref} className="about-me">
 			<aside className="about-me-picture">
 				<div className="bg-profile bg-contain bg-no-repeat w-full h-full"></div>
 			</aside>
@@ -12,15 +12,24 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 				<h4>Hei, I'm Selvi!</h4>
 				<br />
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-					nec convallis velit. Suspendisse a erat eu metus sodales vehicula.
-					Orci varius natoque penatibus et magnis dis parturient montes,
-					nascetur ridiculus mus. Sed pharetra metus at odio feugiat vehicula
-					placerat ut nulla. Etiam vel lobortis velit. Nullam rutrum arcu in
-					ipsum accumsan, quis facilisis enim pellentesque. Fusce eu rutrum
-					purus. Sed eget neque metus. Sed finibus tortor sed erat lobortis, sed
-					lacinia nunc malesuada. Duis semper vestibulum nunc in rhoncus.
-					Phasellus suscipit gravida nisi ac tempor.
+					I'm a Junior Web Developer based in Helsinki, Finland. I love learning
+					new technologies, writing code that's easy to read, and exploring ways
+					to create a pleasant and engaging user experience. I'm always on the
+					lookout for new projects!
+				</p>
+				<br />
+				<p>
+					I attended Hive Helsinki, a 42 school, where I was introduced to Web
+					Development. I decided to specialise in it, and explored Helsinki
+					University's Full Stack Open, which had really ignited my love for Web
+					Development! Shortly after, I enrolled to Integrify's Full Stack
+					Development course, where I learned ASP.NET Core, the basic of DevOps
+					and Azure.
+				</p>
+				<br />
+				<p>
+					Outside of coding, I spend my free-time running, gaming, and trying
+					out new recipes I found on the net. &#127858;
 				</p>
 				<br />
 				<div>
@@ -34,8 +43,7 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 					</div>
 				</div>
 				<div className="about-me-skills">
-					<h5>SKILLS</h5>
-
+					<h5>TOOLKIT</h5>
 					<div className="about-me-skills-containers">
 						<div>
 							<div className="bg-javascriptLogo"></div>
@@ -65,9 +73,13 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 							<div className="bg-aspnetcoreLogo"></div>
 							<p>C# / ASP.NET Core</p>
 						</div>
+						<div>
+							<div className="bg-tailwindcss"></div>
+							<p>Tailwind</p>
+						</div>
 					</div>
 				</div>
 			</article>
-		</div>
+		</section>
 	);
 });

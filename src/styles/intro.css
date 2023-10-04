@@ -1,63 +1,58 @@
+@tailwind components;
+
 /* ↓↓↓↓↓ easier to leave these in css for now... ↓↓↓↓↓ */
 
 /* Intro section (top index component) fade in animation */
-.fade-in-text {
-	opacity: 0;
-	transform: translateX(-20px); /* Start position outside the view */
-	animation: fadeInLeft 1.5s ease-in-out forwards; /* Adjust animation duration and timing as needed */
+@layer components {
+	.intro {
+		@apply flex flex-col
+				items-center
+				w-full
+				gap-32
+				font-ubuntu font-normal text-customPink1 bg-animated;
+	}
+	.intro-text {
+		@apply overflow-visible
+				w-fit
+				mt-24
+				text-center
+				fade-in-text
+	 			text-5xl md:text-6xl lg:text-7xl xl:text-8xl landscape-1024:text-5xl landscape-1280:text-5xl;
+	}
+
+	.intro-text h5 {
+		@apply border-b-8 border-customYellow2 mb-8 p-4;
+	}
+	.intro-text p {
+		@apply text-xl md:text-xl lg:text-2xl landscape-1024:text-5xl landscape-1280:text-5xl
+		font-bold;
+	}
+	.intro-arrow {
+		@apply fade-in-text text-customPink1 w-fit h-fit mb-10;
+	}
+	.bg-animated {
+		@apply w-full h-[100vh] flex align-middle justify-center
+		bg-size-300 animate-animateBG
+		bg-grad;
+	}
+	.fade-in-text {
+		@apply opacity-0 translate-x-[-20px] animate-fadeInleft;
+	}
 }
 .delay-1 {
 	animation-delay: 0.5s;
 }
-@keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-10px); /* Start position outside the view */
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0); /* End position */
-	}
+.bg-grad {
+	background: rgb(11, 0, 41);
+	background: linear-gradient(
+		-45deg,
+		rgba(11, 0, 41, 1) 0%,
+		rgba(251, 37, 118, 1) 50%,
+		rgba(255, 228, 92, 1) 100%
+	);
+}
+.bg-size-300 {
+	background-size: 300% 300%;
 }
 
 /* Intro section (top index component) animated gradient background */
-.bg-animated {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-size: 300% 300%;
-	background-image: linear-gradient(
-		-45deg,
-		rgba(21, 0, 80, 1) 0%,
-		rgba(238, 37, 113, 1) 52%,
-		rgba(255, 214, 0, 0.9416141456582633) 100%
-	);
-	-webkit-animation: AnimateBG 20s ease infinite;
-	animation: AnimateBG 10s ease infinite;
-}
-
-@-webkit-keyframes AnimateBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes AnimateBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}

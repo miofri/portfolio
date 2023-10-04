@@ -13,21 +13,9 @@ export const App = () => {
 	};
 	return (
 		<>
-			<section
-				className="flex flex-col
-				w-full
-				gap-32
-				font-ubuntu font-normal text-customPink1 bg-animated"
-			>
-				<Intro scrollToCard={handleScrollToCard} />
-			</section>
-			<section>
-				<AboutMe ref={cardRef} />
-			</section>
-			<section>
-				<Card />
-			</section>
-			<section className="h-screen bg-darkPurple"></section>
+			<Intro scrollToCard={handleScrollToCard} />
+			<AboutMe ref={cardRef} />
+			<Card />
 		</>
 	);
 };

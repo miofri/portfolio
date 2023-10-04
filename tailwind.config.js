@@ -7,7 +7,9 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
+				animateBG: 'animateBG 10s ease infinite',
 				fadeIn: 'fadeIn 3s ease-in-out',
+				fadeInleft: 'fadeInLeft 1.5s ease-in-out forwards',
 			},
 			backgroundImage: {
 				boxGridHeaderBefore: 'linear-gradient(-45deg, #3a0547, #e6246e 50%)',
@@ -25,6 +27,8 @@ module.exports = {
 					"url('/src/components/images/MongoDB_Logomark_ForestGreen.png')",
 				aspnetcoreLogo: "url('/src/components/images/NET_Core_Logo.svg.png')",
 				nodejs: "url('/src/components/images/light.svg')",
+				tailwindcss:
+					"url('/src/components/images/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg')",
 			},
 			colors: {
 				darkerPurple: '#0B0029',
@@ -47,6 +51,21 @@ module.exports = {
 				'95pros': '95%',
 			},
 			keyframes: {
+				animateBG: {
+					'0%': { 'background-position': '0% 50%' },
+					'50%': { 'background-position': '100% 50%' },
+					'100%': { 'background-position': '0% 50%' },
+				},
+				fadeInLeft: {
+					'0%': {
+						transform: 'translateX(-10px)',
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+				},
 				fadeIn: {
 					'0%': { opacity: '0' },
 					'40%': { opacity: '0.3' },
