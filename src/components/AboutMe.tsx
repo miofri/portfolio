@@ -14,8 +14,8 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 				<p>
 					I'm a Junior Web Developer based in Helsinki, Finland. I love learning
 					new technologies, writing code that's easy to read, and exploring ways
-					to create a pleasant and engaging user experience. I'm always on the
-					lookout for new projects!
+					to create a pleasant and engaging user experience. Currently on the
+					lookout for more learning projects. &#128269;
 				</p>
 				<br />
 				<p>
