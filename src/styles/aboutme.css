@@ -1,0 +1,56 @@
+@tailwind components;
+
+@layer components {
+	.about-me {
+		@apply min-h-screen h-auto
+			flex
+			flex-col xl:flex-row
+			gap-7 md:gap-10 xl:gap-20 2xl:gap-20
+			align-top
+			items-center
+			justify-center
+			md:p-16
+			font-mulish text-customPink1 bg-darkPurple;
+	}
+
+	.about-me-picture {
+		@apply mt-10 xl:mt-[-130px] 2xl:mt-[-70px]
+		flex flex-col items-center self-center justify-center gap-3
+		h-[300px] sm:h-[400px] md:h-[500px] xl:h-[440px] 2xl:h-[550.25px]
+		w-[280px] sm:w-[350px] md:w-[437.5px] xl:w-[546.9px] 2xl:w-[490px];
+	}
+
+	.about-me-article {
+		@apply h-auto
+		w-10/12 2xl:w-6/12;
+	}
+
+	.about-me h5 {
+		@apply text-2xl font-ubuntu font-semibold border-b-4 w-fit mb-8;
+	}
+
+	.about-me h4 {
+		@apply text-customYellow2 font-ubuntu
+		text-5xl
+		2xl:text-8xl;
+	}
+
+	.about-me-skills {
+		@apply text-2xl text-center font-ubuntu font-semibold w-fit my-8;
+	}
+
+	.about-me-skills-containers {
+		@apply w-fit grid gap-2 font-mulish text-sm
+		grid-cols-3 md:grid-cols-5 xl:grid-cols-7;
+	}
+
+	.about-me-skills-containers > div {
+		@apply flex flex-col items-center;
+	}
+	.about-me-skills-containers > div > div {
+		@apply bg-contain bg-center bg-no-repeat w-[50px] h-[50px] mb-2;
+	}
+	.about-me-skills h5 {
+		@apply border-b-4 w-fit mb-8;
+	}
+}

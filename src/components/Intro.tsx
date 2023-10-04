@@ -17,7 +17,7 @@ export const Intro = ({ scrollToCard }: any) => {
 				</p>
 			</div>
 			<div className="fade-in-text delay-1" onClick={scrollToCard}>
-				<div className="animate-bounce text-customPink1 self-end">
+				<div className="animate-bounce text-customPink1 self-end mb-10">
 					<AiOutlineArrowDown size={100} />
 				</div>
 			</div>

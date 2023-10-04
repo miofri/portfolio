@@ -3,4 +3,5 @@
 @import 'tailwindcss/utilities';
 
 @import './intro.css';
-@import './projects.css';
+@import './card.css';
+@import './aboutme.css';

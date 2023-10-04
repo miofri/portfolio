@@ -1,0 +1,89 @@
+@import './intro.css';
+@tailwind components;
+
+@layer components {
+	.box-grid-header {
+		@apply w-44 sm:w-[19rem] md:w-[21rem] lg:w-52 xl:w-64 2xl:w-fit
+		h-fit
+		bg-darkPurple;
+	}
+
+	/* PROJECTS text screen setting*/
+	.box-grid-header p {
+		@apply text-2xl sm:text-2xl md:text-2xl lg:text-xl xl:text-xl 2xl:text-2xl
+		text-center
+		pt-2 2xl:pt-3 font-mulish text-customPink1;
+	}
+	.box-grid-header h2 {
+		@apply text-5xl sm:text-6xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-8xl
+		2xl:px-12 pb-4
+		mx-auto
+		w-fit
+		text-customYellow2
+		font-ubuntu;
+	}
+}
+
+@layer components {
+	.box-grid-portfolio {
+		@apply w-10/12 md:w-11/12 lg:w-98pros xl:w-7/12
+		h-fit md:h-fit xl:h-72 2xl:h-fit
+		min-h-[35vh]
+		mt-5
+		box-grid-portfolio-bg
+		rounded-md
+		flex flex-row justify-center items-center
+		shadow-sm shadow-almostMagenta;
+	}
+	.box-grid-portfolio h4 {
+		@apply text-2xl md:text-4xl lg:text-3xl 2xl:text-3xl text-customPink1 font-mulish font-bold drop-shadow-sm;
+	}
+	.box-grid-portfolio-tags {
+		@apply rounded-lg h-fit w-fit px-2 bg-darkPurple p-1 text-almostMagenta text-[8px] lg:text-[9px] 2xl:text-sm;
+	}
+	.box-grid-portfolio button {
+		@apply h-fit lg:h-7 xl:h-8 2xl:h-10
+		w-fit lg:w-fit
+		px-3 py-2
+		mt-2 lg:mt-3
+		mb-1
+		rounded-md
+		text-xs lg:text-sm
+		shadow-almostMagenta
+		bg-darkPurple
+		first-letter:shadow-sm
+		text-customPink1
+		hover:bg-customYellow2
+		hover:text-darkerPurple
+		transition-all duration-200 ease-linear;
+	}
+	.box-grid-portfolio p {
+		@apply text-customPink1
+		text-sm sm:text-base md:text-base	lg:text-sm 2xl:text-lg
+		md:my-6
+		mt-5
+		font-mulish;
+	}
+}
+
+/* ↓↓↓↓↓ easier to leave these in css for now... ↓↓↓↓↓ */
+.box-grid-header:before {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	background-image: linear-gradient(-45deg, #3a0547, #fb3782 50%);
+	transform: rotate(-2.5deg) translateX(0rem) translateY(0.5rem) skewX(-30deg)
+		skewY(-9deg);
+	box-shadow: 1px 2px 5px 0px #fb2576;
+}
+
+/* PROJECTS text's background. the one below is for the white parallelogram */
+
+/* styling for portfolio grids */
+/* linear gradient bg */
+.box-grid-portfolio-bg {
+	background-size: 100% 100%;
+	background-image: linear-gradient(-45deg, #150050 2%, #fb3782);
+}

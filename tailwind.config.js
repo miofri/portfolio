@@ -11,18 +11,37 @@ module.exports = {
 			},
 			backgroundImage: {
 				boxGridHeaderBefore: 'linear-gradient(-45deg, #3a0547, #e6246e 50%)',
+				houzi: "url('/src/components/images/houzi.png')",
+				profile: "url('/src/components/images/Untitled.png')",
+				github: "url('/src/components/images/github-mark-white.png')",
+				linkedin: "url('/src/components/images/In-White-128@2x.png')",
+				typescriptLogo:
+					"url('/src/components/images/Typescript_logo_2020.svg.png')",
+				javascriptLogo: "url('/src/components/images/JavaScript-logo.png')",
+				reactLogo: "url('/src/components/images/React-icon.svg.png')",
+				postgresLogo:
+					"url('/src/components/images/Postgresql_elephant.svg.png')",
+				mongodbLogo:
+					"url('/src/components/images/MongoDB_Logomark_ForestGreen.png')",
+				aspnetcoreLogo: "url('/src/components/images/NET_Core_Logo.svg.png')",
+				nodejs: "url('/src/components/images/light.svg')",
 			},
 			colors: {
-				darkPurple: '#150050',
+				darkerPurple: '#0B0029',
+				darkPurple: '#160052',
 				mediumPurple: '#3F0071',
 				almostMagenta: '#FB2576',
+				lessMagenta: '#fb3782',
 				darkerMagenta: '#fb2576',
 				customPink1: '#ffe6ef',
 				customPink2: '#f4045f',
+				customYellow: '#FFD600',
+				customYellow2: '#FFE45C',
 			},
 			fontFamily: {
 				mulish: ['Mulish', 'sans-serif'],
 				philospoher: ['Philosopher', 'sans-serif'],
+				ubuntu: ['Ubuntu', 'sans-serif'],
 			},
 			height: {
 				'95pros': '95%',

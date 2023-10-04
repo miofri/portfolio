@@ -1,4 +1,5 @@
 import './App.css';
+import { AboutMe } from './components/AboutMe';
 import { Card } from './components/Card';
 import { Intro } from './components/Intro';
 import { useRef } from 'react';
@@ -12,18 +13,21 @@ export const App = () => {
 	};
 	return (
 		<>
-			<div
+			<section
 				className="flex flex-col
 				w-full
 				gap-32
-				font-philospoher text-customPink1 bg-animated "
+				font-ubuntu font-normal text-customPink1 bg-animated"
 			>
 				<Intro scrollToCard={handleScrollToCard} />
-			</div>
-			<div className="h-auto min-h-screen bg-darkPurple">
-				<Card ref={cardRef} />
-			</div>
-			<div className="h-screen bg-darkPurple"></div>
+			</section>
+			<section>
+				<AboutMe ref={cardRef} />
+			</section>
+			<section>
+				<Card />
+			</section>
+			<section className="h-screen bg-darkPurple"></section>
 		</>
 	);
 };
