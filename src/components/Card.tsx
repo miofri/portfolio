@@ -37,10 +37,10 @@ export const Card = () => {
 						</p>
 						<div className="flex gap-3 lg:mt-5">
 							<button>
-								<a href="http://houzi.vercel.app">Go</a>
+								<a href="https://houzi.vercel.app">Go</a>
 							</button>
 							<button>
-								<a href="http://https://github.com/miofri/Fullstack-ASP-.NET-Core-React-Integrify-Project">
+								<a href="https://github.com/miofri/Fullstack-ASP-.NET-Core-React-Integrify-Project">
 									Source code
 								</a>
 							</button>
