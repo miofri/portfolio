@@ -57,8 +57,27 @@ export const Card = () => {
 
 				<div className="box-grid-portfolio">
 					<h4 className=" text-5xl text-darkPurple font-mulish font-black">
-						Coming soon.
+						Brewery App
 					</h4>
+					<p>
+						A simple app that fetches, displays, and searches for brewery companies from the given API endpoint, using React and TypeScript
+					</p>
+					<div className="flex gap-3 lg:mt-5">
+						<button>
+							<a href="https://sk-brewery.vercel.app">Go</a>
+						</button>
+						<button>
+							<a href="https://github.com/miofri/Integrify-project-8-breweries/tree/main">
+								Source code
+							</a>
+						</button>
+					</div>
+					<div className="flex flex-row flex-wrap gap-2 text-xs mt-4 font-mulish">
+						<div className="box-grid-portfolio-tags">Typescript</div>
+						<div className="box-grid-portfolio-tags">React</div>
+						<div className="box-grid-portfolio-tags">Styled Components</div>
+						<div className="box-grid-portfolio-tags">MUI</div>
+					</div>
 				</div>
 			</div>
 		</section>
