@@ -20,7 +20,7 @@ export const Card = () => {
 			<div
 				className="h-full lg:h-5/6
 				w-full lg:w-11/12 xl:w-10/12
-				mb-4 2xl:mb-0
+				mb-10 2xl:mb-20
 				xl:mt-10
 				flex flex-col justify-center items-center
 				gap-1
