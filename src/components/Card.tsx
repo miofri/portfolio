@@ -56,29 +56,60 @@ export const Card = () => {
 				</div>
 
 				<div className="box-grid-portfolio">
-					<h4 className=" text-5xl text-darkPurple font-mulish font-black">
-						Brewery App
-					</h4>
-					<p>
-						A simple app that fetches, displays, and searches for brewery companies from the given API endpoint, using React and TypeScript
-					</p>
-					<div className="flex gap-3 lg:mt-5">
-						<button>
-							<a href="https://sk-brewery.vercel.app">Go</a>
-						</button>
-						<button>
-							<a href="https://github.com/miofri/Integrify-project-8-breweries/tree/main">
-								Source code
-							</a>
-						</button>
-					</div>
-					<div className="flex flex-row flex-wrap gap-2 text-xs mt-4 font-mulish">
-						<div className="box-grid-portfolio-tags">Typescript</div>
-						<div className="box-grid-portfolio-tags">React</div>
-						<div className="box-grid-portfolio-tags">Styled Components</div>
-						<div className="box-grid-portfolio-tags">MUI</div>
+					<div className="w-10/12 h-fit py-16">
+
+						<h4 className=" text-5xl text-darkPurple font-mulish font-black">
+							E-Commerce - Frontend only
+						</h4>
+						<p>
+							The earlier, frontend only version of the above. Operations are handled by the API, as well as the database itself. Therefore, data may be nonsensical at times.
+						</p>
+						<div className="flex gap-3 lg:mt-5">
+							<button>
+								<a href="https://sk-platzi.vercel.app">Go</a>
+							</button>
+							<button>
+								<a href="https://github.com/miofri/Integrify-ECommerce-Project?tab=readme-ov-file">
+									Source code
+								</a>
+							</button>
+						</div>
+						<div className="flex flex-row flex-wrap gap-2 text-xs mt-4 font-mulish">
+							<div className="box-grid-portfolio-tags">Typescript</div>
+							<div className="box-grid-portfolio-tags">React</div>
+							<div className="box-grid-portfolio-tags">Redux Toolkit</div>
+							<div className="box-grid-portfolio-tags">MUI</div>
+						</div>
 					</div>
 				</div>
+
+				<div className="box-grid-portfolio">
+					<div className="w-10/12 h-fit py-16">
+						<h4 className=" text-5xl text-darkPurple font-mulish font-black">
+							Brewery App
+						</h4>
+						<p>
+							A simple app that fetches, displays, and searches for brewery companies from the given API endpoint, using React and TypeScript
+						</p>
+						<div className="flex gap-3 lg:mt-5">
+							<button>
+								<a href="https://sk-brewery.vercel.app">Go</a>
+							</button>
+							<button>
+								<a href="https://github.com/miofri/Integrify-project-8-breweries/tree/main">
+									Source code
+								</a>
+							</button>
+						</div>
+						<div className="flex flex-row flex-wrap gap-2 text-xs mt-4 font-mulish">
+							<div className="box-grid-portfolio-tags">Typescript</div>
+							<div className="box-grid-portfolio-tags">React</div>
+							<div className="box-grid-portfolio-tags">Styled Components</div>
+							<div className="box-grid-portfolio-tags">MUI</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 	);
