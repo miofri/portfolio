@@ -58,6 +58,14 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 							<p>React.JS</p>
 						</div>
 						<div>
+							<div className="bg-styledComponentLogo bg-contain bg-no-repeat bg-center w-[50px] h-[50px] mb-2"></div>
+							<p>Styled-components</p>
+						</div>
+						<div>
+							<div className="bg-tailwindcss"></div>
+							<p>Tailwind</p>
+						</div>
+						<div>
 							<div className="bg-nodejs"></div>
 							<p>Node.JS</p>
 						</div>
@@ -72,10 +80,6 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 						<div>
 							<div className="bg-aspnetcoreLogo"></div>
 							<p>C# / ASP.NET Core</p>
-						</div>
-						<div>
-							<div className="bg-tailwindcss"></div>
-							<p>Tailwind</p>
 						</div>
 					</div>
 				</div>

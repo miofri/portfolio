@@ -26,7 +26,9 @@ module.exports = {
 				nodejs: "url('/src/assets/light.svg')",
 				tailwindcss:
 					"url('/src/assets/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg')",
+				styledComponentLogo: "url('/src/assets/styled-components.png')",
 			},
+
 			colors: {
 				darkerPurple: '#0B0029',
 				darkPurple: '#160052',
@@ -39,9 +41,12 @@ module.exports = {
 				customPink2: '#f4045f',
 				customYellow: '#FFD600',
 				customYellow2: '#FFEB85',
-				testText: '#8d98d9',
-				testButton: '#92d8f9',
-				testCardBg: '#6163ab',
+				testText: '#884e9a',
+				testButton: '#893da1',
+				testCardBg: '#562862',
+				//testText: '#8d98d9',
+				//testButton: '#92d8f9',
+				//testCardBg: '#6163ab',
 			},
 			fontFamily: {
 				mulish: ['Mulish', 'sans-serif'],
