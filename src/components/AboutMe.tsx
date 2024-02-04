@@ -19,16 +19,18 @@ export const AboutMe = React.forwardRef((props, ref: any) => {
 				</p>
 				<br />
 				<p>
-					I attended Hive Helsinki, a 42 school, where I was introduced to Web
-					Development. I decided to specialise in it, and explored Helsinki
-					University's Full Stack Open, which had really ignited my love for Web
-					Development! Shortly after, I enrolled to Integrify's Full Stack
-					Development course, where I learned ASP.NET Core, the basic of DevOps
-					and Azure.
+					My journey into software development began with FreeCodeCamp's
+					JavaScript module, which led me to dive into Helsinki University’s
+					FullStackOpen course. The course had really ignited my love for Web
+					Development, and I decided that I would like to explore this path
+					more. Soon after, I secured enrollment in the Full Stack Development
+					Program at Integrify Academy, establishing a solid foundation in web
+					development and programming - doing projects & learning the foundation
+					of ASP.NET Core, DevOps and Azure.
 				</p>
 				<br />
 				<p>
-					Outside of coding, I spend my free-time running, gaming, and trying
+					Outside of coding, I spend my free-time at the gym, gaming, and trying
 					out new recipes I found on the net. &#127858;
 				</p>
 				<br />
