@@ -18,11 +18,7 @@ export const ProjectTemplate: React.FC<ProjectTemplateInputModel> = ({
 }) => {
 	return (
 		<div className="box-grid-portfolio">
-			<div
-				className="w-10/12 h-fit
-			py-4 lg:py-10
-			px-4 lg:px-8"
-			>
+			<div className="box-grid-inner-container">
 				<h4>{title}</h4>
 				<p>{description}</p>
 				<div className="flex gap-3 lg:mt-5">

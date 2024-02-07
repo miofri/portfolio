@@ -1,8 +1,8 @@
 export const portfolioItems = [
 	{
 		title: 'E-Commerce',
-		description:
-			'A mock online-store that allows users to do basic operations such as registering, logging in, placing an order, and more. More details available in the source code. Note: takes a while to load due to Azure free-tier.',
+		description: `A mock online-store that allows users to do basic operations such as registering, logging in, placing an order, and more. More details available in the source code.
+		Note: takes at least 1 minute to load due to Azure free-tier.`,
 		links: {
 			go: 'https://houzi.vercel.app',
 			sourceCode:
