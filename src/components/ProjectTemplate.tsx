@@ -29,7 +29,7 @@ export const ProjectTemplate: React.FC<ProjectTemplateInputModel> = ({
 						<a href={links.sourceCode}>Source code</a>
 					</button>
 				</div>
-				<div className="flex flex-row flex-wrap gap-2 text-xs mt-4 font-mulish">
+				<div className="flex flex-row flex-wrap gap-2 text-xs font-mulish">
 					{tags.map((tag) => (
 						<div className="box-grid-portfolio-tags">{tag}</div>
 					))}
