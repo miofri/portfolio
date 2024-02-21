@@ -1,5 +1,14 @@
 export const portfolioItems = [
 	{
+		title: 'Delivery calculator',
+		description: `A delivery calculator that adheres to specific conditions (more details in the repo).	The calculator takes several inputs: the value of the cart in Euro, delivery distance, amount of items, as well as time of order. Based on the specification linked above, it will calculate the delivery fee. The app also features a dark/light theme toggle.`,
+		links: {
+			go: 'https://sk-delivery-calc.vercel.app',
+			sourceCode: 'https://github.com/miofri/calculator-2024',
+		},
+		tags: ['TypeScript', 'React', 'Styled-components', 'Jest'],
+	},
+	{
 		title: 'E-Commerce',
 		description: `A mock online-store that allows users to do basic operations such as registering, logging in, placing an order, and more. More details available in the source code.
 		Note: takes at least 1 minute to load due to Azure free-tier.`,
