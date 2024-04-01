@@ -1,12 +1,21 @@
 export const portfolioItems = [
 	{
+		title: 'Palworld calculator',
+		description: `A calculator that determines the result of breeding a particular Pal with another. The source CSV data is listed on my GitHub. This project taught me quite a bit - RTK Query, useContext, understanding & working with CSV files with MongoDB, etc. Hosted on fly.io.`,
+		links: {
+			go: 'https://palw.fly.dev',
+			sourceCode: 'https://github.com/miofri/palw-fe',
+		},
+		tags: ['TypeScript', 'React', 'Express.js', 'MongoDB', 'styled-components'],
+	},
+	{
 		title: 'Delivery calculator',
 		description: `A delivery calculator that adheres to specific conditions (more details in the repo).	The calculator takes several inputs: the value of the cart in Euro, delivery distance, amount of items, as well as time of order. Based on the specification linked above, it will calculate the delivery fee. The app also features a dark/light theme toggle.`,
 		links: {
 			go: 'https://sk-delivery-calc.vercel.app',
 			sourceCode: 'https://github.com/miofri/calculator-2024',
 		},
-		tags: ['TypeScript', 'React', 'Styled-components', 'Jest'],
+		tags: ['TypeScript', 'React', 'styled-components', 'Jest'],
 	},
 	{
 		title: 'E-Commerce',
@@ -45,6 +54,6 @@ export const portfolioItems = [
 			sourceCode:
 				'https://github.com/miofri/Integrify-project-8-breweries/tree/main',
 		},
-		tags: ['Typescript', 'React', 'Styled Components', 'MUI'],
+		tags: ['Typescript', 'React', 'styled-components', 'MUI'],
 	},
 ];
