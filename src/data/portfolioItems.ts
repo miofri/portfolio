@@ -1,7 +1,7 @@
 export const portfolioItems = [
 	{
-		title: 'Palworld calculator',
-		description: `A calculator that determines the result of breeding a particular Pal with another. The source CSV data is listed on my GitHub. This project taught me quite a bit - RTK Query, useContext, understanding & working with CSV files with MongoDB, etc. Hosted on fly.io.`,
+		title: 'Palworld breeding calculator',
+		description: `This app helps in determining the result of breeding a particular Pal with another. The source CSV data is listed on my GitHub. This project taught me quite a bit - RTK Query, useContext, understanding & working with CSV files with MongoDB, etc.`,
 		links: {
 			go: 'https://palw.fly.dev',
 			sourceCode: 'https://github.com/miofri/palw-fe',
