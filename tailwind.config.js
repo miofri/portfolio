@@ -43,7 +43,7 @@ module.exports = {
 				customYellow2: '#FFEB85',
 				cardButton: '#893da1',
 				cardButtonHover: '#b26dc7',
-				cardBg: 'rgb(46 16 101 / var(--tw-bg-opacity))',
+				cardBg: '#2e1065',
 			},
 			fontFamily: {
 				mulish: ['Mulish', 'sans-serif'],

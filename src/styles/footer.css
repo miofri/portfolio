@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+	.footer {
+		@apply w-screen h-72 bg-cardBg text-white flex
+		flex-col xl:flex-row
+		gap-6 xl:gap-24
+		justify-center
+		items-center shadow-2xl xl:p-0;
+	}
+	.footer-button-array {
+		@apply flex xl:flex-col;
+	}
+	.footer a {
+		@apply flex
+		flex-row
+		justify-center xl:justify-start
+		gap-2
+		h-fit lg:h-10 xl:h-8 2xl:h-10
+		w-fit lg:w-32
+		px-3 py-2 mb-2
+		rounded-md
+		text-xs lg:text-sm
+		shadow-almostMagenta
+		first-letter:shadow-sm
+		text-white
+		hover:bg-cardButtonHover
+		hover:text-white
+		transition-all duration-200 ease-linear;
+	}
+}

@@ -7,7 +7,7 @@
 	.intro {
 		@apply flex flex-col
 				items-center
-				w-full
+				w-screen
 				gap-32
 				font-ubuntu font-normal text-customPink1 bg-animated;
 	}

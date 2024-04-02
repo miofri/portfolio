@@ -22,9 +22,7 @@
 		text-white
 		font-ubuntu;
 	}
-}
 
-@layer components {
 	.box-grid-portfolio {
 		@apply w-10/12 md:w-11/12 lg:w-4/12 xl:w-3/12
 		min-h-[26rem] md:min-h-[22rem] lg:min-h-[26rem] xl:min-h-[30rem]

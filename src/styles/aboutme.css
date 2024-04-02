@@ -3,6 +3,7 @@
 @layer components {
 	.about-me {
 		@apply min-h-screen h-auto
+		w-screen
 			flex
 			flex-col xl:flex-row
 			gap-7 md:gap-10 xl:gap-20 2xl:gap-20
@@ -22,7 +23,7 @@
 
 	.about-me-article {
 		@apply h-auto
-		w-10/12 2xl:w-6/12;
+		w-9/12 2xl:w-6/12;
 	}
 
 	.about-me h5 {

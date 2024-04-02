@@ -1,6 +1,7 @@
 import './App.css';
 import { AboutMe } from './components/AboutMe';
 import { Card } from './components/Card';
+import { Footer } from './components/Footer';
 import { Intro } from './components/Intro';
 import { useRef } from 'react';
 
@@ -16,6 +17,7 @@ export const App = () => {
 			<Intro scrollToCard={handleScrollToCard} />
 			<AboutMe ref={cardRef} />
 			<Card />
+			<Footer />
 		</>
 	);
 };

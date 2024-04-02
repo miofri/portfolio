@@ -7,7 +7,7 @@ export const Card = () => {
 		<section
 			className="flex flex-col
 			gap-10 sm:gap-20 md:gap-20 lg:gap-12 xl:gap-0 2xl:gap-10
-			h-auto min-h-screen bg-darkPurple
+			h-auto min-h-screen w-screen bg-darkPurple
 			mb-98 overflow-visible items-center"
 		>
 			<div className="mt-20 h-fit w-fit text-center">
