@@ -3,7 +3,7 @@ export const portfolioItems = [
 		title: 'Social blogging app',
 		description: `IN PROGRESS - social blogging app with multi users, following/follower system, dashboard, profile.`,
 		links: {
-			go: 'https://palw.fly.dev',
+			go: 'https://fs-slsh.fly.dev',
 			sourceCode: 'https://github.com/miofri/s-psql-fe',
 		},
 		tags: [
