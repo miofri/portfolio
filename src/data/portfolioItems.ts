@@ -1,5 +1,21 @@
 export const portfolioItems = [
 	{
+		title: 'Social blogging app',
+		description: `IN PROGRESS - social blogging app with multi users, following/follower system, dashboard, profile.`,
+		links: {
+			go: 'https://palw.fly.dev',
+			sourceCode: 'https://github.com/miofri/s-psql-fe',
+		},
+		tags: [
+			'TypeScript',
+			'React/Vite',
+			'Express.js',
+			'PSQL',
+			'Tailwind/DaisyUi',
+			'Supabase',
+		],
+	},
+	{
 		title: 'Palworld breeding calculator',
 		description: `This app helps in determining the result of breeding a particular Pal with another. The source CSV data is listed on my GitHub. This project taught me quite a bit - RTK Query, useContext, understanding & working with CSV files with MongoDB, etc.`,
 		links: {
